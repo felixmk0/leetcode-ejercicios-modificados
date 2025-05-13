@@ -29,12 +29,13 @@ Estás dado una cadena `s` y un número entero `t`, que representa el número de
 
 Muestra la cadena resultante de cada transformación, con su longitud y nr. de transformación.
 
-
 **Ejemplos:**
 
-![image](https://github.com/user-attachments/assets/ca677a56-83e3-498b-b249-229e65e65514)
+<div style="display: flex; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/ca677a56-83e3-498b-b249-229e65e65514" alt="Imagen 1" width="200"/>
+  <img src="https://github.com/user-attachments/assets/faf2f4ee-4363-4b00-b765-a758775f6d4b" alt="Imagen 2" width="200"/>
+</div>
 
-![image](https://github.com/user-attachments/assets/faf2f4ee-4363-4b00-b765-a758775f6d4b)
 
 ### Mi solución:
 
