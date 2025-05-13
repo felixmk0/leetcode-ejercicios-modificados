@@ -1,3 +1,7 @@
+![GitHub Repo stars](https://img.shields.io/github/stars/felixmk0/leetcode-ejercicios-modificados)
+![GitHub watchers](https://img.shields.io/github/watchers/felixmk0/leetcode-ejercicios-modificados)
+![GitHub forks](https://img.shields.io/github/forks/felixmk0/leetcode-ejercicios-modificados)
+
 # 📘 Ejercicios de LeetCode Modificados
 
 Este repositorio contiene una colección de problemas de **LeetCode** modificados y adaptados, con enunciados en español y soluciones en **Java**. Los ejercicios están organizados por niveles de dificultad y cada uno incluye casos de prueba, explicaciones y análisis de la solución.
@@ -27,6 +31,45 @@ Muestra la cadena resultante de cada transformación, con su longitud y nr. de t
 
 
 **Ejemplos:**
+
 ![image](https://github.com/user-attachments/assets/ca677a56-83e3-498b-b249-229e65e65514)
+
 ![image](https://github.com/user-attachments/assets/faf2f4ee-4363-4b00-b765-a758775f6d4b)
 
+### Mi solución:
+
+<details>
+  <summary>Haz clic aquí para ver la solución </summary>
+
+```java
+public class Solution {
+
+    public static void main(String[] args) {
+        transformString("abcyy", 2);
+    }
+
+    public static void transformString(String s, int t) {
+        for (int i = 0; i < t; i++) {
+            for (int j = 0; j < s.length(); j++) {
+                if (s.charAt(j) == 'z') {
+                    if (j != 0) {
+                        s = s.substring(0, j) + "ab" + s.substring(j + 1);
+                        j++;
+                    } else s = "ab" + s.substring(j + 1);
+                } else {
+                    if (j != 0) s = s.substring(0, j) + getNextChar(s.charAt(j)) + s.substring(j + 1);
+                    else s = getNextChar(s.charAt(j)) + s.substring(j + 1);
+                }
+            }
+            System.out.println("T = " + i + ", String = " + s + ", Length: " + s.length());
+        }
+    }
+
+
+    public static char getNextChar(char c) {
+        if (c == 'z') return 'a';
+        return (char) (c + 1);
+    }
+}
+```
+</details>
