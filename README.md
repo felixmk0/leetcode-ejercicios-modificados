@@ -62,7 +62,7 @@ public class Solution {
                     else s = getNextChar(s.charAt(j)) + s.substring(j + 1);
                 }
             }
-            System.out.println("T = " + i + ", String = " + s + ", Length: " + s.length());
+            System.out.println("T = " + (i + 1) + ", String = " + s + ", Length: " + s.length());
         }
     }
 
@@ -78,6 +78,6 @@ public class Solution {
 ### Salida por consola:
 
 ```
-T = 0, String = bcdzz, Length: 5
-T = 1, String = cdeabab, Length: 7
+T = 1, String = bcdzz, Length: 5
+T = 2, String = cdeabab, Length: 7
 ```
