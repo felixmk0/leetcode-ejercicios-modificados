@@ -74,3 +74,10 @@ public class Solution {
 }
 ```
 </details>
+
+### Salida por consola:
+
+```
+T = 0, String = bcdzz, Length: 5
+T = 1, String = cdeabab, Length: 7
+```
